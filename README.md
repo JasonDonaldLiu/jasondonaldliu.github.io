@@ -15,3 +15,5 @@
 - `assets/portrait.jpg` 是头像，`assets/liu-xingzhou-cv.pdf` 是网站提供下载的英文简历。
 
 [GitHub Pages 官方说明](https://docs.github.com/en/pages/quickstart)
+
+主页版式参考[于嘉汀的学术主页](https://jiatingyu-amss.github.io/)，原模板来自 [Jon Barron 的学术主页](https://jonbarron.info/)。
