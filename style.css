@@ -14,16 +14,16 @@
 
 :root {
   color-scheme: light;
-  --paper: #fbfaf6;
-  --mist: #edf3f3;
-  --ink: #142d38;
-  --text: #314651;
-  --muted: #4e6470;
-  --accent: #21586b;
-  --dark-accent: #143e4e;
-  --rule: #d7dfdd;
-  --hero-rule: #c6d7d9;
-  --copper: #82562d;
+  --paper: #fcfbf7;
+  --mist: #f0f3ea;
+  --ink: #202c24;
+  --text: #354439;
+  --muted: #506255;
+  --accent: #892c4b;
+  --dark-accent: #672038;
+  --rule: #dce2d6;
+  --hero-rule: #ccd7c2;
+  --section-rule: #a3b773;
   --serif: "Instrument Serif", "STIX Two Text", Georgia, serif;
   --sans: "Source Sans 3", system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
@@ -219,7 +219,7 @@ h1 {
 .text-link {
   font-size: 1rem;
   font-weight: 600;
-  text-decoration-color: #81a0aa;
+  text-decoration-color: #ac8893;
 }
 
 .text-link:hover {
@@ -231,7 +231,7 @@ h1 {
   border: 1px solid var(--hero-rule);
   border-radius: 7px;
   background: var(--paper);
-  box-shadow: 0 8px 26px rgb(20 45 56 / 7%);
+  box-shadow: 0 8px 26px rgb(32 44 36 / 8%);
 }
 
 .portrait img {
@@ -251,7 +251,8 @@ h1 {
 
 h2 {
   padding-bottom: 0.62rem;
-  border-bottom: 1px solid var(--hero-rule);
+  border-bottom: 2px solid var(--section-rule);
+  border-image: linear-gradient(90deg, var(--section-rule), var(--rule) 70%, transparent) 1;
   color: var(--ink);
   font-family: var(--serif);
   font-size: clamp(2.45rem, 4.4vw, 3.55rem);
@@ -260,7 +261,7 @@ h2 {
   line-height: 1.12;
 }
 
-.entry, .honors-list li {
+.entry, .detail-list li {
   display: grid;
   grid-template-columns: 11.75rem minmax(0, 1fr);
   gap: clamp(1.5rem, 4vw, 3.15rem);
@@ -272,7 +273,7 @@ h2 {
 }
 
 .entry-meta,
-.honors-date {
+.row-label {
   color: var(--muted);
   font-size: 0.94rem;
   font-variant-numeric: tabular-nums;
@@ -307,23 +308,17 @@ h3 {
 }
 
 .award-note {
-  color: var(--copper);
+  color: var(--accent);
   font-weight: 650;
 }
 
-.tools {
-  margin-top: 0.35rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.honors-list {
+.detail-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.honors-list li {
+.detail-list li {
   align-items: baseline;
   padding-block: 0.85rem;
 }
@@ -391,7 +386,7 @@ html[lang="zh-CN"] h3 {
   }
 
   .entry,
-  .honors-list li {
+  .detail-list li {
     grid-template-columns: 1fr;
     gap: 0.34rem;
   }
