@@ -12,7 +12,7 @@
 ## 修改内容
 
 - `index.html` 是英文主页，`zh.html` 是中文主页，两页共用 `style.css`。
-- `assets/portrait.jpg` 是头像，`assets/liu-xingzhou-cv.pdf` 是网站提供下载的英文简历。
+- `assets/usagi-avatar.jpg` 是头像，`assets/liu-xingzhou-cv.pdf` 是网站提供下载的英文简历。
 
 [GitHub Pages 官方说明](https://docs.github.com/en/pages/quickstart)
 
